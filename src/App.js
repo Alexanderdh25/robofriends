@@ -10,7 +10,6 @@ function App() {
     robots: [],
     searchField: "",
   });
-  // console.log(state);
 
   React.useEffect(() => {
     console.log('checking')

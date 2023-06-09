@@ -1,7 +1,6 @@
 import React from "react";
 
 function Card(props) {
-  // console.log(props)
   return (
     <div className="card">
       <img src={`https://robohash.org/${props.robots.username}`} alt="robots" />

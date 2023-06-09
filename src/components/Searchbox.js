@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Searchbox = (props) => {
-    console.log(props);
     return (
         <input 
             type="search" 
