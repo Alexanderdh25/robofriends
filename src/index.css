@@ -1,0 +1,125 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Readex+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&family=Readex+Pro:wght@500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #c2e59c;
+  background: linear-gradient(to right, #64b3f4, #8fe0a9);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  /* color: #264364; */
+  /* color: #20364f; */
+  color: #192f48;
+}
+
+.app input[type='search'] {
+  display: block;
+  margin: 10px auto 45px auto;
+  padding: 10px 30px;
+}
+
+.scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0px 10px;
+  width: 98%;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.robots--container {
+  display: grid;
+  grid-template-columns: repeat(4, 370px);
+  justify-content: center;
+  align-content: center;
+}
+
+/* Card Component */
+
+.card {
+  display: inline-block;
+  margin: 5px;
+  background: #97dd9f;
+  /* background: #a1f0b4; */
+  /* background: linear-gradient(to right, #99c3a2, #c9c5a9); */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all .2s ease-in-out;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.03)
+}
+
+.footer {
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .app h1 {
+    font-size: 40px;
+  }
+
+  .robots--container {
+    display: grid;
+    grid-template-columns: repeat(3, 345px);
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  .app h1 {
+    font-size: 40px;
+  }
+
+  .robots--container {
+    /* border: 2px solid purple; */
+    display: grid;
+    grid-template-columns: repeat(2, 359px);
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  .app h1 {
+    font-size: 40px;
+  }
+
+  .robots--container {
+    /* border: 2px solid orange; */
+    display: grid;
+    grid-template-columns: repeat(1, 359px);
+    justify-content: center;
+    align-content: center;
+  }
+}
